@@ -1,13 +1,10 @@
 # QuarkSmart
 
-quarksmart is a Python module for machine learning.
-
-The project was started in 2018 by ESIG Software. See the About us page for a list of core contributors.
+O quarksmart é uma biblioteca Python que permite a integração entre ferramentas de Data Science (como o Jupyter Notebooks) com os dados armazenados no sistema [QuarkSmart](https://quarkbi.esig.com.br).
 
 ### Installing
 
 A instalação da biblioteca é bem simples e pode ser realizada facilmente por meio do gerenciador de pacotes do python (pip).
-
 
 Para instalar, abrir o terminal e rodar o comando abaixo do ``pip`` :
 
@@ -20,8 +17,6 @@ Para verificar se a instalação aconteceu corretamente, basta importar o pacote
 >>> quarksmart.__version__
 1.0.0
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Deployment
 
