@@ -49,13 +49,6 @@ O retorno da função é um **Dataframe** do *pandas*.
 
 Todas os detalhes das funções da biblioteca podem ser encontrados na página de `funções`_.
 
-Mais detalhes
---------------------
-
-.. toctree::
-
-   funcoes
-
 .. _`funções`: funcoes.html
 .. _`API REST`: https://quarkbi.esig.com.br/app/extrator/entidade/api_rest.jsf
 .. _`listagem das entidades`: https://quarkbi.esig.com.br/app/extrator/entidade/list.jsf

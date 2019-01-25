@@ -24,6 +24,7 @@ O retorno da função é um **Dataframe** do *pandas*.
     pandas.core.frame.DataFrame
 
 Exemplo informando uma data:
+
 .. code-block:: python
 
     >>> import quarksmart as qs
