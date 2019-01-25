@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; quarksmart  documentation</title>
+  <title>Sobre &mdash; quarksmart  documentation</title>
   
 
   
@@ -27,7 +27,16 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="QuarkSmart" href="index.html" />
+ 
+<link rel="stylesheet" type="text/css" href="_static/handsontable.full.min.css">
+<script src="_static/handsontable.full.min.js"></script>
+<style>
+body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !important;text-align:center;list-style:none;padding:0 0 0 10px;line-height:24px;height:26px;overflow:hidden;font-size:12px;font-family:verdana;position:relative;margin:0}.tab li{margin-left:0px !important;margin-top:2px !important;float:left;height:24px;border:1px solid #aaa;background:#d1d1d1;background:linear-gradient(top, #ececec 50%, #d1d1d1);display:inline-block;position:relative;z-index:0;border-top-left-radius:6px;border-top-right-radius:6px;box-shadow:0 3px 3px rgba(0,0,0,0.4),inset 0 1px 0 #fff;text-shadow:0 1px #fff;margin:0 -5px;padding:0 20px}.tab li.active{background:#fff;color:#333;z-index:2}.tab li:before{left:-6px;border-width:0 1px 1px 0;box-shadow:2px 2px 0 #d1d1d1}.tab li:after{right:-6px;border-width:0 0 1px 1px;box-shadow:-2px 2px 0 #d1d1d1}.tab a{color:#555;text-decoration:none}.tab:before{position:absolute;content:" ";width:100%;bottom:0;left:0;border-bottom:1px solid #aaa;z-index:1}.tabcontent{margin-top:-1px}
+</style>
+</div>
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -76,10 +85,14 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sobre</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalacao">Instalação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#equipe">Equipe</a></li>
 </ul>
-</div>
+</li>
+</ul>
+
             
           
         </div>
@@ -123,13 +136,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Sobre</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/sobre.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/sobre.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -142,33 +155,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p># Sobre</p>
-<p>O quarksmart é uma biblioteca Python que permite a integração entre ferramentas de Data Science (como o Jupyter Notebooks) com os dados armazenados no sistema [QuarkSmart](<a class="reference external" href="https://quarkbi.esig.com.br">https://quarkbi.esig.com.br</a>).</p>
-<p>### Installing</p>
+  <div class="section" id="sobre">
+<h1>Sobre<a class="headerlink" href="#sobre" title="Permalink to this headline">¶</a></h1>
+<p>O quarksmart é uma biblioteca Python que permite a integração entre ferramentas de Data Science (como o Jupyter Notebooks) com os dados armazenados no sistema <a class="reference external" href="https://quarkbi.esig.com.br">QuarkSmart</a>.</p>
+<div class="section" id="instalacao">
+<h2>Instalação<a class="headerlink" href="#instalacao" title="Permalink to this headline">¶</a></h2>
 <p>A instalação da biblioteca é bem simples e pode ser realizada facilmente por meio do gerenciador de pacotes do python (pip).</p>
-<p>Para instalar, abrir o terminal e rodar o comando abaixo do <code class="docutils literal notranslate"><span class="pre">pip</span></code> :</p>
-<blockquote>
-<div>pip install quarksmart</div></blockquote>
+<p>Para instalar, abrir o terminal e rodar o comando abaixo do <code class="docutils literal notranslate"><span class="pre">pip</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install quarksmart
+</pre></div>
+</div>
 <p>Para verificar se a instalação aconteceu corretamente, basta importar o pacote e verificar a versão.</p>
-<p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">quarksmart</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">quarksmart.__version__</span>
-<span class="pre">1.0.0</span>
-<span class="pre">`</span></code></p>
-<p>## Deployment</p>
-<p>Add additional notes about how to deploy this on a live system</p>
-<p>## Built With</p>
-<ul class="simple">
-<li>[Python](<a class="reference external" href="http://www.dropwizard.io/1.0.2/docs/">http://www.dropwizard.io/1.0.2/docs/</a>) - The web framework used</li>
-<li>[Java](<a class="reference external" href="https://maven.apache.org/">https://maven.apache.org/</a>) - Dependency Management</li>
-<li>[Jupyter Notebook](<a class="reference external" href="https://rometools.github.io/rome/">https://rometools.github.io/rome/</a>) - Used to generate RSS Feeds</li>
-</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quarksmart</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quarksmart</span><span class="o">.</span><span class="n">__version__</span>
+<span class="gp">... </span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="equipe">
+<h2>Equipe<a class="headerlink" href="#equipe" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyexcel</span> <span class="kn">as</span> <span class="nn">pe</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">records</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">iget_records</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;your_file.xls&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> is aged at </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">],</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]))</span>
+<span class="go">Adam is aged at 28</span>
+<span class="go">Beatrice is aged at 29</span>
+<span class="go">Ceri is aged at 30</span>
+<span class="go">Dean is aged at 26</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pe</span><span class="o">.</span><span class="n">free_resources</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="QuarkSmart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
