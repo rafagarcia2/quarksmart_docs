@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>QuarkSmart &mdash; quarksmart  documentation</title>
+  <title>carregar_dados &mdash; quarksmart  documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="carregar_dados" href="funcoes.html" />
+    <link rel="prev" title="QuarkSmart" href="index.html" />
  
 <link rel="stylesheet" type="text/css" href="_static/handsontable.full.min.css">
 <script src="_static/handsontable.full.min.js"></script>
@@ -55,7 +55,7 @@ body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !imp
           
 
           
-            <a href="#" class="icon icon-home"> quarksmart
+            <a href="index.html" class="icon icon-home"> quarksmart
           
 
           
@@ -85,8 +85,12 @@ body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !imp
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="funcoes.html">carregar_dados</a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">carregar_dados</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parametros">Paramêtros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tratando-os-erros">Tratando os erros</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -101,7 +105,7 @@ body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !imp
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">quarksmart</a>
+          <a href="index.html">quarksmart</a>
         
       </nav>
 
@@ -130,15 +134,15 @@ body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !imp
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>QuarkSmart</li>
+      <li>carregar_dados</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/funcoes.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -151,30 +155,10 @@ body{font-family:Helvetica,sans-serif;margin:2 0 0 0}.tab{margin-bottom:0px !imp
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quarksmart">
-<h1>QuarkSmart<a class="headerlink" href="#quarksmart" title="Permalink to this headline">¶</a></h1>
-<p>O <strong>quarksmart</strong> é uma biblioteca Python que permite a integração entre ferramentas de <em>Data Science</em>
-com os dados armazenados no sistema <a class="reference external" href="https://quarkbi.esig.com.br">QuarkSmart</a>.</p>
-<p>Com apenas um comando é possível carregar seus dados para um formato que permite o tratamento de forma fácil e ágil.
-O quarksmart foi pensado para ser utilizado com outras bibliotecas de <em>Data Science</em>, como o <code class="docutils literal notranslate"><span class="pre">pandas</span></code> e o <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, mas nada
-você pode utiliza-la como preferir.</p>
-</div>
-<div class="section" id="instalacao">
-<h1>Instalação<a class="headerlink" href="#instalacao" title="Permalink to this headline">¶</a></h1>
-<p>A instalação da biblioteca é bem simples e pode ser realizada facilmente por meio do gerenciador de pacotes do python (pip).</p>
-<p>Para instalar, abrir o terminal e rodar o comando abaixo do <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install quarksmart
-</pre></div>
-</div>
-<p>Para verificar se a instalação aconteceu corretamente, basta importar o pacote e verificar a versão.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quarksmart</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">quarksmart</span><span class="o">.</span><span class="n">__version__</span>
-<span class="gp">... </span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="utilizacao">
-<h1>Utilização<a class="headerlink" href="#utilizacao" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="carregar-dados">
+<h1>carregar_dados<a class="headerlink" href="#carregar-dados" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="parametros">
+<h2>Paramêtros<a class="headerlink" href="#parametros" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">As informações que seram passadas nos paremêtros da função devem ser consultadas direto no sistema do QuarkSmart.</p>
@@ -185,25 +169,36 @@ você pode utiliza-la como preferir.</p>
 <li><code class="docutils literal notranslate"><span class="pre">entidade</span></code> - Identificador da Entidade, é um atalho para a entidade que permite encontra-la de forma mais fácil. Para encontra-lo, basta acessar a página de <a class="reference external" href="https://quarkbi.esig.com.br/app/extrator/entidade/list.jsf">listagem das entidades</a>.</li>
 <li><code class="docutils literal notranslate"><span class="pre">data</span></code> - quando se deseja consultar os dados da entidade em determinada data, é possível informa-la por meio desse parâmetro e o sistema retornará o conjunto de dados da entidade naquele momento. Quando esse parâmetro não é informado o sistema pega estado atual. Ex: <code class="docutils literal notranslate"><span class="pre">data='01/01/2019'</span></code>.</li>
 </ul>
+<p>O retorno da função é um <strong>Dataframe</strong> do <em>pandas</em>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quarksmart</span> <span class="kn">as</span> <span class="nn">qs</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">entidade</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">carregar_dados</span><span class="p">(</span><span class="s2">&quot;pessoa&quot;</span><span class="p">,</span> \
+<span class="gp">&gt;&gt;&gt; </span><span class="n">entidade</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">carregar_dados</span><span class="p">(</span><span class="s2">&quot;colaboradores&quot;</span><span class="p">,</span> \
 <span class="gp">... </span>               <span class="n">token</span><span class="o">=</span><span class="s2">&quot;b40734876aeea537ec0dce2e371da4a1&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">entidade</span><span class="p">)</span>
 <span class="go">pandas.core.frame.DataFrame</span>
 </pre></div>
 </div>
-<p>O retorno da função é um <strong>Dataframe</strong> do <em>pandas</em>.</p>
-<p>Todas os detalhes das funções da biblioteca podem ser encontrados na página de <a class="reference external" href="funcoes.html">funções</a>.</p>
-<div class="section" id="mais-detalhes">
-<h2>Mais detalhes<a class="headerlink" href="#mais-detalhes" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="funcoes.html">carregar_dados</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="funcoes.html#parametros">Paramêtros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="funcoes.html#tratando-os-erros">Tratando os erros</a></li>
+<p>Exemplo informando uma data:
+.. code-block:: python</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quarksmart</span> <span class="k">as</span> <span class="nn">qs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">entidade</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">carregar_dados</span><span class="p">(</span><span class="n">entidade</span><span class="o">=</span><span class="s2">&quot;movimentacoes-financeiro&quot;</span><span class="p">,</span> \
+<span class="gp">... </span>               <span class="n">token</span><span class="o">=</span><span class="s2">&quot;b40734876aeea537ec0dce2e371da4a1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s2">&quot;01/12/2018&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">entidade</span><span class="p">)</span>
+<span class="go">pandas.core.frame.DataFrame</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tratando-os-erros">
+<h2>Tratando os erros<a class="headerlink" href="#tratando-os-erros" title="Permalink to this headline">¶</a></h2>
+<p>Quando o sistema não consegue carregar os dados, ele retorna uma mensagem no lugar dos dados, as mensagens podem ser:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Falha</span> <span class="pre">de</span> <span class="pre">Autenticação.</span></code> - quando o sistema não consegue autenticar o usuário com o Token informado.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Falha</span> <span class="pre">ao</span> <span class="pre">carregar</span> <span class="pre">os</span> <span class="pre">dados</span></code> - quando a entidade não é encontrada ou existe algum problema com os dados.</li>
 </ul>
-</li>
-</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">entidade</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">carregar_dados</span><span class="p">(</span><span class="s2">&quot;colaboradores&quot;</span><span class="p">,</span> \
+<span class="gp">... </span>               <span class="n">token</span><span class="o">=</span><span class="s2">&quot;token_invalido&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">entidade</span>
+<span class="go">Falha de Autenticação.</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -216,8 +211,8 @@ você pode utiliza-la como preferir.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="funcoes.html" class="btn btn-neutral float-right" title="carregar_dados" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="index.html" class="btn btn-neutral" title="QuarkSmart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
